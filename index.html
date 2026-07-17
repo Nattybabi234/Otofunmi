@@ -4,95 +4,289 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bloom & Loop | Handmade Crochet</title>
+
+<title>Bloom & Loop | Handmade Crochet Creations</title>
+
+
+<meta name="description" content="Bloom & Loop creates handmade crochet bags, plushies, keychains, headbands and accessories. Custom crochet orders available.">
+
+
+<meta name="keywords" content="crochet, handmade crochet, crochet bags, crochet gifts, custom crochet">
+
+
+<meta name="author" content="Bloom & Loop">
+
+
+<!-- Website Icon -->
+
+<link rel="icon" href="images/logo.png">
+
+
+<!-- Google Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <link rel="stylesheet" href="style.css">
 
 </head>
 
-
 <body>
+<div class="loader">
 
+🧶
 
+<p>
+Bloom & Loop
+</p>
+
+</div>
 <header>
 
 <nav>
 
 <h1>🧶 Bloom & Loop</h1>
 
-
 <div class="menu" id="menu">
 
 <a href="#home">Home</a>
-<a href="#shop">Shop</a>
+<a href="#categories">Categories</a>
+<a href="#featured">Featured</a>
 <a href="#about">About</a>
-<a href="#contact">Orders</a>
+<a href="#contact">Order</a>
 
 </div>
-
 
 <div class="hamburger" id="hamburger">
-☰
+<i class="fas fa-bars"></i>
 </div>
-
 
 </nav>
 
 </header>
 
 
-
+<!-- HERO -->
 
 <section class="hero" id="home">
 
-<div>
+<div class="hero-text">
 
-<h2>Handmade With Love ♡</h2>
+<h2>Handmade Crochet Creations</h2>
 
 <p>
-Unique crochet pieces created just for you.
+Beautiful handmade bags, plushies, keychains,
+headbands and hair accessories created with
+love, one stitch at a time.
 </p>
 
+<div class="hero-buttons">
 
-<a href="#shop" class="main-btn">
-Shop Collection
+<a href="#featured" class="main-btn">
+🧶 Shop Collection
 </a>
 
+<a href="#contact" class="secondary-btn">
+💬 Custom Order
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-image">
+
+<img src="images/hero.jpg" alt="Bloom & Loop Crochet">
 
 </div>
 
 </section>
 
 
+<!-- WHY CHOOSE US -->
+
+<section class="why-us">
+
+<div class="feature-card">
+
+<i class="fa-solid fa-heart"></i>
+
+<h3>Handmade</h3>
+
+<p>
+Every crochet piece is made by hand with love and care.
+</p>
+
+</div>
 
 
+<div class="feature-card">
 
-<section id="shop">
+<i class="fa-solid fa-palette"></i>
 
+<h3>Custom Colours</h3>
+
+<p>
+Choose colours that perfectly match your style.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<i class="fa-solid fa-gift"></i>
+
+<h3>Perfect Gifts</h3>
+
+<p>
+Thoughtful handmade gifts for every occasion.
+</p>
+
+</div>
+
+
+<div class="feature-card">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+<h3>Easy Ordering</h3>
+
+<p>
+Order directly through WhatsApp in just minutes.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section id="categories">
+
+<h2>Shop by Category</h2>
+
+<div class="category-grid">
+
+<div class="category-card">
+👜
+<h3>Bags</h3>
+</div>
+
+<div class="category-card">
+❤️
+<h3>Keychains</h3>
+</div>
+
+<div class="category-card">
+🧸
+<h3>Plushies</h3>
+</div>
+
+<div class="category-card">
+👑
+<h3>Headbands</h3>
+</div>
+
+<div class="category-card">
+🎀
+<h3>Hair Accessories</h3>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FEATURED PRODUCTS -->
+
+<section id="featured">
 
 <h2>Our Collection 🧶</h2>
 
 
-<div class="gallery">
+<div class="filters">
+
+<button class="filter-btn active" data-filter="all">
+All
+</button>
 
 
-<div class="product">
+<button class="filter-btn" data-filter="bags">
+👜 Bags
+</button>
 
-<img src="images/keychain.jpg">
 
-<h3>Heart Keychains</h3>
+<button class="filter-btn" data-filter="keychains">
+❤️ Keychains
+</button>
+
+
+<button class="filter-btn" data-filter="plushies">
+🧸 Plushies
+</button>
+
+
+<button class="filter-btn" data-filter="headbands">
+👑 Headbands
+</button>
+
+
+<button class="filter-btn" data-filter="hair">
+🎀 Hair Accessories
+</button>
+
+
+</div>
+
+
+
+<div class="gallery" id="productGallery">
+
+
+
+<div class="product" data-category="bags">
+
+
+<div class="badge">
+Customisable
+</div>
+
+
+<img src="images/bag.jpg" alt="Crochet Bag">
+
+
+<h3>Crochet Bag</h3>
+
 
 <p>
-Cute handmade accessories.
+Beautiful handmade bags available in different colours.
 </p>
 
 
-<a class="whatsapp-btn"
-href="https://wa.me/447823657496?text=Hi!%20I%20want%20to%20order%20a%20crochet%20heart%20keychain">
+<span class="price">
+£20
+</span>
 
-Order Now
+
+<a class="whatsapp-btn"
+
+href="https://wa.me/447823657496?text=Hi%20Funmi!%20I%20would%20like%20to%20order%20a%20crochet%20bag"
+
+target="_blank">
+
+Order This
 
 </a>
 
@@ -103,21 +297,75 @@ Order Now
 
 
 
-<div class="product">
 
-<img src="images/bag.jpg">
+<div class="product" data-category="keychains">
 
-<h3>Crochet Bags</h3>
+
+<img src="images/keychain.jpg" alt="Heart Keychain">
+
+
+<h3>Heart Keychain</h3>
+
 
 <p>
-Custom colours available.
+Cute handmade accessories perfect for gifts.
 </p>
 
 
-<a class="whatsapp-btn"
-href="https://wa.me/447823657496?text=Hi!%20I%20want%20to%20order%20a%20crochet%20bag">
+<span class="price">
+£5
+</span>
 
-Order Now
+
+<a class="whatsapp-btn"
+
+href="https://wa.me/447823657496?text=Hi%20Funmi!%20I%20would%20like%20to%20order%20a%20crochet%20bag"
+
+target="_blank">
+
+Order This
+
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="product" data-category="plushies">
+
+
+<div class="badge">
+Popular
+</div>
+
+
+<img src="images/plushie.jpg" alt="Crochet Plushie">
+
+
+<h3>Crochet Plushie</h3>
+
+
+<p>
+Soft handmade plushies made with love.
+</p>
+
+
+<span class="price">
+£15
+</span>
+
+
+<a class="whatsapp-btn"
+
+href="https://wa.me/447823657496?text=Hi%20Funmi!%20I%20would%20like%20to%20order%20a%20crochet%20bag"
+
+target="_blank">
+
+Order This
 
 </a>
 
@@ -128,28 +376,78 @@ Order Now
 
 
 
-<div class="product">
 
 
-<img src="images/plushie.jpg">
+<div class="product" data-category="headbands">
 
 
-<h3>Crochet Plushies</h3>
+<img src="images/headband.jpg" alt="Crochet Headband">
+
+
+<h3>Crochet Headband</h3>
+
 
 <p>
-Made specially for you.
+Warm and stylish handmade headbands.
 </p>
 
 
-<a class="whatsapp-btn"
-href="https://wa.me/447823657496?text=Hi!%20I%20want%20to%20order%20a%20crochet%20plushie">
+<span class="price">
+£8
+</span>
 
-Order Now
+
+<a class="whatsapp-btn"
+
+href="https://wa.me/447823657496?text=Hi%20Funmi!%20I%20would%20like%20to%20order%20a%20crochet%20bag"
+
+target="_blank">
+
+Order This
 
 </a>
 
 
 </div>
+
+
+
+
+
+
+
+<div class="product" data-category="hair">
+
+
+<img src="images/hair.jpg" alt="Crochet Hair Accessory">
+
+
+<h3>Hair Accessories</h3>
+
+
+<p>
+Cute bows, clips and handmade accessories.
+</p>
+
+
+<span class="price">
+£6
+</span>
+
+
+<a class="whatsapp-btn"
+
+href="https://wa.me/447823657496?text=Hi%20Funmi!%20I%20would%20like%20to%20order%20a%20crochet%20bag"
+
+target="_blank">
+
+Order This
+
+</a> 
+
+
+</div>
+
 
 
 </div>
@@ -157,87 +455,404 @@ Order Now
 
 </section>
 
-
-
-
+<!-- ABOUT -->
 
 <section id="about">
 
 
-<h2>About Us ♡</h2>
+<h2>Meet The Maker 🧶</h2>
+
+
+<div class="about-container">
+
+
+<div class="about-image">
+
+<img src="images/funmi.jpg" alt="Funmi creating crochet pieces">
+
+</div>
+
+
+
+<div class="about-text">
+
+
+<h3>Hi, I'm Funmi! ♡</h3>
 
 
 <p>
 
 Welcome to Bloom & Loop!
-Every piece is handmade carefully with creativity,
-patience and love.
+
+I create handmade crochet pieces
+designed to bring joy, creativity and
+a little bit of warmth into everyday life.
+
+From cute keychains to cosy bags and
+custom creations, every item is carefully
+made by hand with patience and love.
 
 </p>
+
+
+
+<p>
+
+Every stitch represents time, creativity
+and passion. Thank you for supporting
+my small handmade business!
+
+</p>
+
+
+<a href="#contact" class="main-btn">
+
+Create Something Custom
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+<section class="values">
+
+
+<h2>Why Bloom & Loop? 🌸</h2>
+
+
+<div class="values-grid">
+
+
+<div class="value-card">
+
+🧶
+
+<h3>Handmade</h3>
+
+<p>
+Every piece is carefully crocheted by hand.
+</p>
+
+</div>
+
+
+
+<div class="value-card">
+
+🎨
+
+<h3>Unique Designs</h3>
+
+<p>
+No two handmade pieces are exactly the same.
+</p>
+
+</div>
+
+
+
+<div class="value-card">
+
+💛
+
+<h3>Made With Love</h3>
+
+<p>
+Created with care from the first stitch.
+</p>
+
+</div>
+
+
+
+</div>
 
 
 </section>
 
 
+<!-- ORDER STEPS -->
+
+<section class="steps">
+
+<h2>How to Order</h2>
+
+<div class="steps-grid">
+
+<div>
+<span>1️⃣</span>
+<p>Browse the collection</p>
+</div>
+
+<div>
+<span>2️⃣</span>
+<p>Choose your favourite item</p>
+</div>
+
+<div>
+<span>3️⃣</span>
+<p>Message on WhatsApp</p>
+</div>
+
+<div>
+<span>4️⃣</span>
+<p>Receive your handmade creation</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="reviews">
+
+<h2>What Customers Say ⭐</h2>
+
+
+<div class="review-container">
+
+
+<div class="review-card">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+"Beautiful crochet pieces and amazing attention to detail!"
+</p>
+
+<h3>
+— Happy Customer
+</h3>
+
+</div>
 
 
 
 
+<div class="review-card">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+"Such a cute gift idea. I loved my order!"
+</p>
+
+<h3>
+— Happy Customer
+</h3>
+
+</div>
+
+
+
+
+<div class="review-card">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+"Great communication and lovely handmade work."
+</p>
+
+<h3>
+— Happy Customer
+</h3>
+
+</div>
+
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
 
 <section id="contact">
 
+<h2>Custom Orders</h2>
 
-<h2>Custom Orders 💌</h2>
-
+<p class="contact-text">
+Looking for something unique?
+Tell us exactly what you'd like made and we'll be happy to help.
+</p>
 
 <form id="orderForm">
 
 
-<input 
+<input
 id="name"
 placeholder="Your Name"
 required>
 
 
-<input 
+<input
 id="email"
-placeholder="Email">
+placeholder="Email (optional)">
+
+
+<select id="product">
+
+<option>
+Choose Product
+</option>
+
+<option>
+Crochet Bag
+</option>
+
+<option>
+Keychain
+</option>
+
+<option>
+Plushie
+</option>
+
+<option>
+Headband
+</option>
+
+<option>
+Hair Accessory
+</option>
+
+<option>
+Custom Design
+</option>
+
+</select>
+
+
+
+<select id="colour">
+
+<option>
+Preferred Colour
+</option>
+
+<option>
+Pink
+</option>
+
+<option>
+Blue
+</option>
+
+<option>
+Purple
+</option>
+
+<option>
+White
+</option>
+
+<option>
+Black
+</option>
+
+<option>
+Other
+</option>
+
+</select>
+
 
 
 <textarea
+
 id="request"
-placeholder="Tell us what you want made"
-required></textarea>
+
+placeholder="Tell Funmi about your idea..."
+
+required>
+
+</textarea>
 
 
-<button>
-Send Request
+<button type="submit">
+
+💬 Send WhatsApp Request
+
 </button>
 
 
 </form>
 
-
 </section>
 
-<a href="https://wa.me/447123456789"
+
+<!-- FLOATING WHATSAPP -->
+
+<a href="https://wa.me/447823657496"
+
 class="floating-whatsapp"
+
 target="_blank">
-    💬
+
+<i class="fa-brands fa-whatsapp"></i>
+
 </a>
 
+<div class="brand-message">
 
+🧶 Handmade with love by Bloom & Loop
 
+</div>
 
 <footer>
 
+<h3>🧶 Bloom & Loop</h3>
+
 <p>
-© 2026 Bloom & Loop
+Handmade crochet creations made with love.
+</p>
+
+<div class="footer-links">
+
+
+<a href="#">
+Instagram
+</a>
+
+
+<a href="https://wa.me/447823657496">
+WhatsApp
+</a>
+
+
+<a href="#">
+TikTok
+</a>
+
+
+<a href="#contact">
+Custom Orders
+</a>
+
+
+</div>
+
+
+<p class="copyright">
+
+© 2026 Bloom & Loop. All rights reserved.
+
 </p>
 
 </footer>
-
-
 
 <script src="script.js"></script>
 
